@@ -257,6 +257,24 @@ parse_config:
 
   # ZMK
   zmk_keycode_map:
+    # DE
+    DE_Y: "Y"
+    DE_Z: "Z"
+    DE_A_UMLAUT: "Ä"
+    DE_U_UMLAUT: "Ü"
+    DE_O_UMLAUT: "Ö"
+    DE_SZ: "ß"
+
+    DE_DOT: 
+      tap: "."
+      shifted: ":"
+    DE_COMMA: 
+      tap: ","
+      shifted: ";"
+    QEMark:
+      tap: "?"
+      shifted: "!"
+    
     # Symbols
     EXCLAMATION: "!"
     EXCL: "!"
