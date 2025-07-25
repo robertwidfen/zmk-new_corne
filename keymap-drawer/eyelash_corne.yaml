@@ -19,11 +19,11 @@ layers:
   - {t: T, h: '$$mdi:apple-keyboard-control$$'}
   - {t: I, h: Command}
   - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: O, h: LEFT WIN}
+  - {t: O, h: '$$mdi:apple-keyboard-command$$'}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
-  - {t: B, h: RWIN}
+  - {t: B, h: RIGHT GUI}
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: R, h: Command}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
