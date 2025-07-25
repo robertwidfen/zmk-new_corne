@@ -111,6 +111,7 @@ draw_config:
 
 parse_config:
   mark_alternate_layer_activators: true
+  zmk_remove_keycode_prefix: ["DE_"]
   sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
     tap: $$mdi:transfer$$
@@ -261,6 +262,9 @@ parse_config:
     DE_Y: "Y"
     DE_Z: "Z"
     DE_A_UMLAUT: "Ä"
+    Y: "Y"
+    Z: "Z"
+    A_UMLAUT: "Ä"
     DE_U_UMLAUT: "Ü"
     DE_O_UMLAUT: "Ö"
     DE_SZ: "ß"
