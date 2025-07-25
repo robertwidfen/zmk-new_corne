@@ -64,19 +64,19 @@ layers:
   - F10
   - F11
   - {t: '$$mdi:transfer$$', type: trans}
-  - '1'
-  - '2'
+  - {t: '1', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '2', h: '$$mdi:apple-keyboard-control$$'}
   - '3'
-  - '4'
-  - '5'
+  - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '5', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - '6'
-  - '7'
+  - {t: '6', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '7', h: '$$mdi:apple-keyboard-shift$$'}
   - '8'
-  - '9'
-  - '0'
+  - {t: '9', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '0', h: '$$mdi:apple-keyboard-option$$'}
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - €
