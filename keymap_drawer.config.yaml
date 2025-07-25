@@ -1,4 +1,5 @@
 draw_config:
+  zmk_additional_includes: ["config/"]
   n_columns: 1
   draw_key_sides: true
   key_w: 60.0
@@ -111,7 +112,6 @@ draw_config:
 
 parse_config:
   mark_alternate_layer_activators: true
-  zmk_remove_keycode_prefix: ["DE_"]
   sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
     tap: $$mdi:transfer$$
