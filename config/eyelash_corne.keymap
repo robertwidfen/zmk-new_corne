@@ -49,7 +49,7 @@
         QEMark: QEMark {
             compatible = "zmk,behavior-mod-morph";
             label = "QEMARK";
-            bindings = <&kp LS(MINUS)>, <&kp LS(NUMBER_1)>;
+            bindings = <&kp DE_QUESTION>, <&kp DE_EXCLAMATION>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
