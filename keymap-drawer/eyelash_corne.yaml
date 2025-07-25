@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  BONEiSH:
+  BONEish:
   - $$mdi:keyboard-esc$$
   - J
   - D
@@ -13,11 +13,11 @@ layers:
   - L
   - M
   - W
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - PRINTSCREEN
   - $$mdi:keyboard-tab$$
   - {t: C, h: '$$mdi:apple-keyboard-option$$'}
   - {t: T, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: I, h: Fn}
+  - {t: I, h: Functional}
   - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: O, h: LEFT WIN}
   - $$mdi:arrow-left-bold$$
@@ -28,10 +28,10 @@ layers:
   - R
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: G, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '''', s: '"'}
+  - Sft+2
   - '!'
-  - '?'
-  - KP COMMA
+  - {t: Sft+-, s: Sft+_}
+  - {t: ',', s: <}
   - V
   - F
   - Q
@@ -40,16 +40,16 @@ layers:
   - Z
   - K
   - Y
-  - KP DOT
+  - {t: ., s: '>'}
   - {t: '-', s: _}
-  - +
-  - Fn
-  - {t: '$$mdi:backspace-reverse-outline$$', h: FNUMBERS}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOLS}
-  - {t: '$$mdi:keyboard-return$$', h: SYMBOLS}
-  - {t: '$$mdi:backspace$$', h: FNUMBERS}
+  - Sft+#
+  - Functional
+  - {t: '$$mdi:backspace-reverse-outline$$', h: FNumbers}
+  - {t: '$$mdi:keyboard-return$$', h: Symbols}
+  - {t: '$$mdi:keyboard-space$$', h: Symbols}
+  - {t: '$$mdi:backspace$$', h: FNumbers}
   - Settings
-  FNUMBERS:
+  FNumbers:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -80,17 +80,17 @@ layers:
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - AltGr+E
-  - KP COMMA
+  - {t: ',', s: <}
   - KP DIVIDE
   - KP MULTIPLY
   - {t: Sft+`, s: Sft+~}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - ':'
-  - +
-  - {t: '-', s: _}
+  - {t: Sft+., s: Sft+>}
+  - {t: 'Sft+]', s: 'Sft+}'}
+  - {t: /, s: '?'}
   - {t: ., s: '>'}
-  - Sft+KP 5
+  - {t: 'Sft+,', s: Sft+<}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  SYMBOLS:
+  Symbols:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - '@'
@@ -107,23 +107,23 @@ layers:
   - {t: '`', s: '~'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - ^
-  - Sft+KP 8
-  - AltGr+KP 9
+  - Sft+8
+  - AltGr+9
   - (
   - )
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+#
   - Sft+2
-  - Sft+KP 0
+  - Sft+0
   - AltGr+E
   - {t: ;, s: ':'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '-', s: _}
-  - Sft+KP 8
-  - Sft+KP 9
+  - Sft+8
+  - Sft+9
   - {t: '-', s: _}
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
@@ -136,8 +136,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - _
-  - AltGr+KP 8
-  - AltGr+KP 9
+  - AltGr+8
+  - AltGr+9
   - '}'
   - '|'
   - '~'
@@ -147,7 +147,7 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Fn:
+  Functional:
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -164,7 +164,7 @@ layers:
   - $$mdi:progress-download$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - {t: Fn, type: held}
+  - {t: Functional, type: held}
   - $$mdi:apple-keyboard-shift$$
   - LGUI
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -211,11 +211,11 @@ layers:
   - PG DN
   - Ctl+END
   - $$mdi:progress-download$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - Fn
-  - $$mdi:apple-keyboard-shift$$
-  - LGUI
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - '&soft_off'
+  - Functional
+  - RGB COLOR HSB(186,34,34)
+  - RGB EFF
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -226,12 +226,12 @@ layers:
   - $$mdi:arrow-down-bold$$
   - Ctl+PgDn
   - '&studio_unlock'
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&bl BL_TOG'
+  - '&bl BL_CYCLE'
+  - RGB ON
+  - RGB BRD
+  - RGB BRI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:alpha-w-box$$
