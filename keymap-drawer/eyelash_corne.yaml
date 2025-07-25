@@ -30,7 +30,7 @@ layers:
   - {t: G, h: '$$mdi:apple-keyboard-option$$'}
   - '"'
   - {t: BONEish, h: toggle}
-  - {t: Sft+-, s: Sft+1}
+  - {t: DE QUESTION, s: DE EXCLAMATION}
   - {t: ',', s: ;}
   - V
   - F
