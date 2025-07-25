@@ -11,7 +11,10 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
+
+#ifndef KEYMAP_DRAWER
 #include "keys_de.h"
+#endif
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
