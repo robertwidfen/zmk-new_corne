@@ -1,4 +1,5 @@
 draw_config:
+  zmk_additional_includes: ["config/"]
   n_columns: 1
   draw_key_sides: true
   key_w: 60.0
@@ -257,6 +258,56 @@ parse_config:
 
   # ZMK
   zmk_keycode_map:
+    # DE
+    DE_Y: "Y"
+    DE_Z: "Z"
+    DE_A_UMLAUT: "Ä"
+    DE_U_UMLAUT: "Ü"
+    DE_O_UMLAUT: "Ö"
+    DE_SZ: "ß"
+    DE_QUESTION: "?"
+    DE_EXCLAMATION: "!"
+    DE_SINGLE_QUOTE: "'"
+    DE_DOUBLE_QUOTES: "\""
+    DE_EURO: "€"
+    DE_ASTRK: "*"
+    DE_DEGREE: "°"
+    DE_PERCENT: "%"
+    DE_DOLLAR: "$"
+    DE_SECTION: "§"
+    DE_GRAVE: "`"
+    DE_APOSTROPHE: "'"
+    DE_ACUTE: "´"
+    DE_AMPERSAND: "~"
+    DE_PIPE: "|"
+    DE_TILDE: "~"
+    DE_BACKSLASH: "\\"
+    DE_SLASH: "/"
+    DE_LEFT_BRACE: "{"
+    DE_RIGHT_BRACE: "}"
+    DE_LEFT_PARENTHESIS: "("
+    DE_RIGHT_PARENTHESIS: ")"
+    DE_LEFT_BRACKET: "["
+    DE_RIGHT_BRACKET: "]"
+    DE_LT: "<"
+    DE_EQUAL: "="
+    DE_GT: ">"
+    DE_PLUS: 
+      tap: "+"
+      shifted: "*"
+    DE_DOT: 
+      tap: "."
+      shifted: ":"
+    DE_MINUS: 
+      tap: "-"
+      shifted: "_"
+    DE_COMMA: 
+      tap: ","
+      shifted: ";"
+    QEMark:
+      tap: "?"
+      shifted: "!"
+    
     # Symbols
     EXCLAMATION: "!"
     EXCL: "!"
