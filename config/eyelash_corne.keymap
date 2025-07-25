@@ -76,10 +76,10 @@
         default_layer {
             display-name = "BONEish";
             bindings = <
-&kp ESC  &kp J           &kp D               &kp U    &kp A             &kp X                              &kp UP                &kp P        &kp H              &kp L     &kp M                &kp W            &kp PRINTSCREEN
-&kp TAB  &mt LEFT_ALT C  &mt LEFT_CONTROL T  &lt 3 I  &mt LEFT_SHIFT E  &mt LEFT_WIN O           &kp LEFT  &kp ENTER  &kp RIGHT  &mt RWIN B   &mt RIGHT_SHIFT N  &lt 3 R   &mt RIGHT_CONTROL S  &mt RIGHT_ALT G  &kp DE_DOUBLE_QUOTES
-&to 0    &QEMark         &kp DE_COMMA        &kp V    &kp F             &kp Q           &none              &kp DOWN              &kp DE_Y     &kp K              &kp DE_Z  &kp DE_DOT           &kp DE_MINUS     &kp DE_SINGLE_QUOTE
-                                             &mo 3    &lt 1 DEL         &lt 2 ENTER                                              &lt 2 SPACE  &lt 1 BACKSPACE    &mo 4
+&kp ESC  &kp J           &kp D               &kp U    &kp A             &kp X                              &kp UP                &kp P            &kp H              &kp L     &kp M                &kp W            &kp PRINTSCREEN
+&kp TAB  &mt LEFT_ALT C  &mt LEFT_CONTROL T  &lt 3 I  &mt LEFT_SHIFT E  &mt LEFT_GUI O           &kp LEFT  &kp ENTER  &kp RIGHT  &mt RIGHT_WIN B  &mt RIGHT_SHIFT N  &lt 3 R   &mt RIGHT_CONTROL S  &mt RIGHT_ALT G  &kp DE_DOUBLE_QUOTES
+&to 0    &QEMark         &kp DE_COMMA        &kp V    &kp F             &kp Q           &none              &kp DOWN              &kp DE_Y         &kp K              &kp DE_Z  &kp DE_DOT           &kp DE_MINUS     &kp DE_SINGLE_QUOTE
+                                             &mo 3    &lt 1 DEL         &lt 2 ENTER                                              &lt 2 SPACE      &lt 1 BACKSPACE    &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -112,10 +112,10 @@
         Command {
             display-name = "Command";
             bindings = <
-&trans  &kp LC(Q)  &kp LC(W)  &none      &kp LC(A)  &kp LG(R)                           &mmv MOVE_UP                     &kp LC(HOME)     &kp HOME    &kp END    &kp PG_UP       &kp PG_DN   &kp RC(END)
-&trans  &kp LALT   &kp LCTRL  &mo 3      &kp LSHFT  &kp LGUI            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LC(PAGE_UP)  &kp LEFT    &kp RIGHT  &kp UP          &kp DOWN    &kp RC(PAGE_DOWN)
-&trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Z)  &kp LC(Y)  &none                    &mmv MOVE_DOWN                   &trans           &caps_word  &kp CAPS   &kp SCROLLLOCK  &kp INSERT  &kp PAUSE_BREAK
-                              &trans     &trans     &trans                                                               &trans           &trans      &trans
+&trans  &kp LC(Q)  &kp LC(W)  &none      &kp LC(A)  &kp LG(R)                              &mmv MOVE_UP                     &kp LC(HOME)     &kp HOME    &kp END    &kp PG_UP       &kp PG_DN   &kp RC(END)
+&trans  &kp LALT   &kp LCTRL  &mo 3      &kp LSHFT  &kp LEFT_GUI           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LC(PAGE_UP)  &kp LEFT    &kp RIGHT  &kp UP          &kp DOWN    &kp RC(PAGE_DOWN)
+&trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Z)  &kp LC(Y)     &none                    &mmv MOVE_DOWN                   &trans           &caps_word  &kp CAPS   &kp SCROLLLOCK  &kp INSERT  &kp PAUSE_BREAK
+                              &trans     &trans     &trans                                                                  &trans           &trans      &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
