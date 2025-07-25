@@ -42,7 +42,7 @@ layers:
   - Z
   - {t: ., s: ':'}
   - {t: '-', s: _}
-  - DE SINGLE QUOTE
+  - ''''
   - Command
   - {t: '$$mdi:backspace-reverse-outline$$', h: Numbers}
   - {t: '$$mdi:keyboard-return$$', h: Symbols}
@@ -104,7 +104,7 @@ layers:
   - '`'
   - Ü
   - Ä
-  - DE AMPERSAND
+  - '~'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - \
   - '{'
