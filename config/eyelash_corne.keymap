@@ -13,7 +13,9 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #ifndef KEYMAP_DRAWER
+
 #include "keys_de.h"
+
 #endif
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
@@ -98,10 +100,10 @@
         Symbols {
             display-name = "Symbols";
             bindings = <
-&trans  &none  &kp DE_GRAVE       &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_AMPERSAND                           &mmv MOVE_UP                     &kp LS(DE_BACKSLASH)  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &none      &none  &none
-&trans  &none  &kp DE_APOSTROPHE  &kp DE_TILDE     &kp DE_EURO      &kp DE_PIPE                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp DE_PIPE           &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_SZ  &none  &none
-&trans  &none  &kp DE_ACUTE       &none            &none            &kp DE_TILDE      &none                    &mmv MOVE_DOWN                   &kp DE_SLASH          &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &none      &none  &none
-                                  &trans           &trans           &trans                                                                      &trans                &trans                   &trans
+&trans  &kp DE_LT     &kp DE_GRAVE       &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_AMPERSAND                           &mmv MOVE_UP                     &kp DE_BACKSLASH  &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &none      &none  &none
+&trans  &kp DE_EQUAL  &kp DE_APOSTROPHE  &kp DE_TILDE     &kp DE_EURO      &kp DE_PIPE                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp DE_PIPE       &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_SZ  &none  &none
+&trans  &kp DE_GT     &kp DE_ACUTE       &none            &none            &kp DE_TILDE      &none                    &mmv MOVE_DOWN                   &kp DE_SLASH      &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &none      &none  &none
+                                         &trans           &trans           &trans                                                                      &trans            &trans                   &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
