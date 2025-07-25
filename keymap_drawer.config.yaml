@@ -287,6 +287,9 @@ parse_config:
     DE_RIGHT_PARENTHESIS: ")"
     DE_LEFT_BRACKET: "["
     DE_RIGHT_BRACKET: "]"
+    DE_LT: "<"
+    DE_EQUAL: "="
+    DE_GT: ">"
     DE_PLUS: 
       tap: "+"
       shifted: "*"
