@@ -258,6 +258,7 @@ parse_config:
 
   # ZMK
   zmk_keycode_map:
+    LEFT_WIN: "
     # DE
     DE_Y: "Y"
     DE_Z: "Z"
@@ -452,6 +453,7 @@ parse_config:
     LCMD: $$mdi:apple-keyboard-command$$
     LG: $$mdi:apple-keyboard-command$$
     LEFT_GUI: $$mdi:apple-keyboard-command$$
+    RIGHT_GUI: $$mdi:apple-keyboard-command$$
     LEFT_COMMAND: $$mdi:apple-keyboard-command$$
     RCTRL: $$mdi:apple-keyboard-control$$
     RIGHT_CONTROL: $$mdi:apple-keyboard-control$$
