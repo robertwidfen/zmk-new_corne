@@ -265,6 +265,8 @@ parse_config:
     DE_U_UMLAUT: "Ü"
     DE_O_UMLAUT: "Ö"
     DE_SZ: "ß"
+    DE_QUESTION: "?"
+    DE_EXCLAMATION: "!"
     DE_SINGLE_QUOTE: "'"
     DE_DOUBLE_QUOTES: "\""
     DE_EURO: "€"
