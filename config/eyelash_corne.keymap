@@ -39,6 +39,15 @@
                 <&kp LS(PRINTSCREEN)>,
                 <&kp LA(PRINTSCREEN)>;
         };
+
+        QEMark: QEMark {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QEMARK";
+            bindings = <&kp LS(MINUS)>, <&kp LS(NUMBER_1)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -61,9 +70,9 @@
         default_layer {
             display-name = "BONEish";
             bindings = <
-&kp ESC  &kp J           &kp D               &kp U    &kp A             &kp X                              &kp UP                &kp P        &kp H              &kp L  &kp M                &kp W            &kp PRINTSCREEN
-&kp TAB  &mt LEFT_ALT C  &mt LEFT_CONTROL T  &lt 3 I  &mt LEFT_SHIFT E  &mt LEFT_WIN O           &kp LEFT  &kp ENTER  &kp RIGHT  &mt RWIN B   &mt RIGHT_SHIFT N  &kp R  &mt RIGHT_CONTROL S  &mt RIGHT_ALT G  &kp LS(NUMBER_2)
-&to 0    &kp LS(MINUS)   &kp COMMA           &kp V    &kp F             &kp Q           &none              &kp DOWN              &kp Z        &kp K              &kp Y  &kp DOT              &kp MINUS        &kp LS(NON_US_HASH)
+&kp ESC  &kp J           &kp D               &kp U    &kp A             &kp X                              &kp UP                &kp P        &kp H              &kp L    &kp M                &kp W            &kp PRINTSCREEN
+&kp TAB  &mt LEFT_ALT C  &mt LEFT_CONTROL T  &lt 3 I  &mt LEFT_SHIFT E  &mt LEFT_WIN O           &kp LEFT  &kp ENTER  &kp RIGHT  &mt RWIN B   &mt RIGHT_SHIFT N  &lt 3 R  &mt RIGHT_CONTROL S  &mt RIGHT_ALT G  &kp LS(NUMBER_2)
+&to 0    &QEMark         &kp COMMA           &kp V    &kp F             &kp Q           &none              &kp DOWN              &kp Z        &kp K              &kp Y    &kp DOT              &kp SLASH        &kp RIGHT_BRACKET
                                              &mo 3    &lt 1 DEL         &lt 2 ENTER                                              &lt 2 SPACE  &lt 1 BACKSPACE    &mo 4
             >;
 
@@ -85,10 +94,10 @@
         Symbols {
             display-name = "Symbols";
             bindings = <
-&trans  &kp EXCL             &kp AT            &kp LEFT_BRACKET  &kp SINGLE_QUOTE  &kp GRAVE                           &mmv MOVE_UP                     &kp CARET  &kp LS(NUMBER_8)  &kp RA(NUMBER_9)  &kp LPAR   &kp RPAR  &kp BSPC
-&trans  &kp LS(NON_US_HASH)  &kp LS(NUMBER_2)  &kp LS(NUMBER_0)  &kp RA(E)         &kp SEMI            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp MINUS  &kp BSLH  &kp GRAVE
-&trans  &none                &none             &none             &none             &none      &none                    &mmv MOVE_DOWN                   &kp UNDER  &kp RA(NUMBER_8)  &kp RA(NUMBER_9)  &kp RBRC   &kp PIPE  &kp TILDE
-                                               &trans            &trans            &trans                                                               &trans     &trans            &trans
+&trans  &none  &kp LS(EQUAL)     &kp LEFT_BRACKET  &kp SINGLE_QUOTE  &kp RA(MINUS)                                      &mmv MOVE_UP                     &kp LS(N6)                &kp RA(NUMBER_7)  &kp RA(NUMBER_0)  &none      &none  &none
+&trans  &none  &kp LS(NUMBER_2)  &kp LS(NUMBER_0)  &kp RA(E)         &kp RA(NON_US_BACKSLASH)           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp RA(NON_US_BACKSLASH)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp MINUS  &none  &none
+&trans  &none  &none             &none             &none             &kp LS(NUMBER_7)          &none                    &mmv MOVE_DOWN                   &kp GRAVE                 &kp RA(NUMBER_8)  &kp RA(NUMBER_9)  &none      &none  &none
+                                 &trans            &trans            &trans                                                                              &trans                    &trans            &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
