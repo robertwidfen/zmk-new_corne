@@ -275,10 +275,10 @@
 /* x */
 #define DE_X (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_X))
 
-/* y */
+/* Y */
 #define DE_Y (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Z))
 
-/* z */
+/* Z */
 #define DE_Z (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y))
 
 /* { */
