@@ -28,7 +28,7 @@ layers:
   - {t: R, h: Command}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: G, h: '$$mdi:apple-keyboard-option$$'}
-  - DE DOUBLE QUOTES
+  - '"'
   - {t: BONEish, h: toggle}
   - {t: Sft+-, s: Sft+1}
   - {t: ',', s: ;}
@@ -41,7 +41,7 @@ layers:
   - K
   - Z
   - {t: ., s: ':'}
-  - DE MINUS
+  - {t: '-', s: _}
   - DE SINGLE QUOTE
   - Command
   - {t: '$$mdi:backspace-reverse-outline$$', h: Numbers}
@@ -79,19 +79,19 @@ layers:
   - {t: '0', s: )}
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
-  - DE EURO
+  - €
   - {t: ',', s: <}
-  - DE SLASH
-  - DE ASTRK
-  - DE DEGREE
+  - /
+  - '*'
+  - °
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - DE PERCENT
-  - DE PLUS
-  - DE MINUS
+  - '%'
+  - {t: +, s: '*'}
+  - {t: '-', s: _}
   - {t: ., s: ':'}
-  - DE DOLLAR
-  - DE SECTION
+  - $
+  - §
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -100,44 +100,44 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   Symbols:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - DE GRAVE
+  - DE LT
+  - '`'
   - Ü
   - Ä
   - DE AMPERSAND
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - Sft+DE BACKSLASH
-  - DE LEFT BRACE
-  - DE RIGHT BRACE
+  - \
+  - '{'
+  - '}'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - DE APOSTROPHE
-  - DE TILDE
-  - DE EURO
-  - DE PIPE
+  - DE EQUAL
+  - ''''
+  - '~'
+  - €
+  - '|'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - DE PIPE
-  - DE LEFT PARENTHESIS
-  - DE RIGHT PARENTHESIS
+  - '|'
+  - (
+  - )
   - ß
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
+  - DE GT
+  - ´
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - DE ACUTE
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - DE TILDE
+  - '~'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - DE SLASH
-  - DE LEFT BRACKET
-  - DE RIGHT BRACKET
+  - /
+  - '['
+  - ']'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
