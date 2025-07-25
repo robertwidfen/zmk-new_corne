@@ -17,7 +17,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - {t: C, h: '$$mdi:apple-keyboard-option$$'}
   - {t: T, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: I, h: Functional}
+  - {t: I, h: Command}
   - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: O, h: LEFT WIN}
   - $$mdi:arrow-left-bold$$
@@ -43,13 +43,13 @@ layers:
   - {t: ., s: '>'}
   - {t: '-', s: _}
   - Sft+#
-  - Functional
-  - {t: '$$mdi:backspace-reverse-outline$$', h: FNumbers}
+  - Command
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Numbers}
   - {t: '$$mdi:keyboard-return$$', h: Symbols}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
-  - {t: '$$mdi:backspace$$', h: FNumbers}
-  - Settings
-  FNumbers:
+  - {t: '$$mdi:backspace$$', h: Numbers}
+  - System
+  Numbers:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -147,7 +147,7 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Functional:
+  Command:
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -164,7 +164,7 @@ layers:
   - $$mdi:progress-download$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - {t: Functional, type: held}
+  - {t: Command, type: held}
   - $$mdi:apple-keyboard-shift$$
   - LGUI
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Settings:
+  System:
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -205,10 +205,10 @@ layers:
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: BONEish, h: toggle}
-  - {t: FNumbers, h: toggle}
+  - {t: Numbers, h: toggle}
   - {t: Symbols, h: toggle}
-  - {t: Functional, h: toggle}
-  - {t: Settings, h: toggle}
+  - {t: Command, h: toggle}
+  - {t: System, h: toggle}
   - {t: BONEish, h: toggle}
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
