@@ -76,10 +76,10 @@
         default_layer {
             display-name = "BONEish";
             bindings = <
-&kp ESC  &kp J           &kp D               &kp U    &kp A             &kp X                              &kp UP                &kp P            &kp H              &kp L     &kp M                &kp W            &kp PRINTSCREEN
-&kp TAB  &mt LEFT_ALT C  &mt LEFT_CONTROL T  &lt 3 I  &mt LEFT_SHIFT E  &mt LEFT_GUI O           &kp LEFT  &kp ENTER  &kp RIGHT  &mt RIGHT_GUI B  &mt RIGHT_SHIFT N  &lt 3 R   &mt RIGHT_CONTROL S  &mt RIGHT_ALT G  &kp DE_DOUBLE_QUOTES
-&to 0    &QEMark         &kp DE_COMMA        &kp V    &kp F             &kp Q           &none              &kp DOWN              &kp DE_Y         &kp K              &kp DE_Z  &kp DE_DOT           &kp DE_MINUS     &kp DE_SINGLE_QUOTE
-                                             &mo 3    &lt 1 DEL         &lt 2 ENTER                                              &lt 2 SPACE      &lt 1 BACKSPACE    &mo 4
+&kp ESC  &kp J           &kp D               &kp U         &kp A             &kp X                              &kp UP                &kp P            &kp H              &kp L     &kp M                &kp W            &kp PRINTSCREEN
+&kp TAB  &mt LEFT_ALT C  &mt LEFT_CONTROL T  &lt 3 I       &mt LEFT_SHIFT E  &mt LEFT_GUI O           &kp LEFT  &kp ENTER  &kp RIGHT  &mt RIGHT_GUI B  &mt RIGHT_SHIFT N  &lt 3 R   &mt RIGHT_CONTROL S  &mt RIGHT_ALT G  &kp DE_DOUBLE_QUOTES
+&to 0    &QEMark         &kp DE_COMMA        &kp V         &kp F             &kp Q           &none              &kp DOWN              &kp DE_Y         &kp K              &kp DE_Z  &kp DE_DOT           &kp DE_MINUS     &kp DE_SINGLE_QUOTE
+                                             &kp LEFT_ALT  &lt 3 DEL         &lt 2 ENTER                                              &lt 2 SPACE      &lt 1 BACKSPACE    &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
