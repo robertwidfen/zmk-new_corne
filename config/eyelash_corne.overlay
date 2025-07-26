@@ -1,0 +1,11 @@
+/ {
+    behaviors {
+        caps_led: led-indicator {
+            led-strip = <&rgb_ug>;
+            led-index = <3>;
+            color-on = <255 0 0>;
+            color-off = <0 0 0>;
+            source = <HOST_LED_CAPSLOCK CAPS_WORD_ACTIVE>;
+        };
+    };
+};
