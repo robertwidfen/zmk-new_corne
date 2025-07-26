@@ -1,3 +1,4 @@
+/*
 / {
     behaviors {
         caps_led_lock: led-indicator {
@@ -17,3 +18,4 @@
         };
     };
 };
+*/
