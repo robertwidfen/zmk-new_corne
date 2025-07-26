@@ -1,11 +1,19 @@
 / {
     behaviors {
-        caps_led: led-indicator {
+        caps_led_lock: led-indicator {
             led-strip = <&rgb_ug>;
             led-index = <3>;
             color-on = <255 0 0>;
             color-off = <0 0 0>;
-            source = <HOST_LED_CAPSLOCK CAPS_WORD_ACTIVE>;
+            source = <HOST_LED_CAPSLOCK>;
+        };
+
+        caps_led_word: led-indicator {
+            led-strip = <&rgb_ug>;
+            led-index = <3>;
+            color-on = <0 0 255>;
+            color-off = <0 0 0>;
+            source = <CAPS_WORD_ACTIVE>;
         };
     };
 };
