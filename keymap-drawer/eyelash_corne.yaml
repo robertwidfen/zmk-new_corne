@@ -43,8 +43,8 @@ layers:
   - {t: ., s: ':'}
   - {t: '-', s: _}
   - ''''
-  - Command
-  - {t: '$$mdi:backspace-reverse-outline$$', h: Numbers}
+  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Command}
   - {t: '$$mdi:keyboard-return$$', h: Symbols}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
   - {t: '$$mdi:backspace$$', h: Numbers}
@@ -93,10 +93,10 @@ layers:
   - $
   - §
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   Symbols:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -190,8 +190,8 @@ layers:
   - SCROLLLOCK
   - Ins
   - PAUSE BREAK
-  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
