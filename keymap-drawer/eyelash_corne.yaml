@@ -7,7 +7,7 @@ layers:
   - U
   - A
   - X
-  - $$mdi:arrow-up-bold$$
+  - $$mdi:volume-high$$
   - P
   - H
   - L
@@ -20,9 +20,9 @@ layers:
   - {t: I, h: Command}
   - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: O, h: '$$mdi:apple-keyboard-command$$'}
-  - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:arrow-right-bold$$
+  - PREV
+  - MUTE
+  - NEXT
   - {t: B, h: '$$mdi:apple-keyboard-command$$'}
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: R, h: Command}
@@ -36,7 +36,7 @@ layers:
   - F
   - Q
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:arrow-down-bold$$
+  - $$mdi:volume-low$$
   - Y
   - K
   - Z
@@ -56,7 +56,7 @@ layers:
   - F3
   - F4
   - F5
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F6
   - F7
   - F8
@@ -69,9 +69,9 @@ layers:
   - '3'
   - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '5', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '6', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '7', h: '$$mdi:apple-keyboard-shift$$'}
   - '8'
@@ -85,7 +85,7 @@ layers:
   - '*'
   - °
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '%'
   - {t: +, s: '*'}
   - {t: '-', s: _}
@@ -105,7 +105,7 @@ layers:
   - Ü
   - Ä
   - '~'
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - $$mdi:volume-high$$
   - \
   - '{'
   - '}'
@@ -118,9 +118,9 @@ layers:
   - '~'
   - {t: €, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '|', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - REWIND
+  - PLAY PAUSE
+  - FAST FORWARD
   - {t: '|', h: '$$mdi:apple-keyboard-command$$'}
   - {t: (, h: '$$mdi:apple-keyboard-shift$$'}
   - )
@@ -134,7 +134,7 @@ layers:
   - DE CARET
   - '~'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - $$mdi:volume-low$$
   - /
   - '['
   - ']'
