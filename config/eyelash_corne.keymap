@@ -76,10 +76,10 @@
         default_layer {
             display-name = "BONEish";
             bindings = <
-&kp ESC  &kp J           &kp D               &kp U         &kp A             &kp X                              &kp UP                &kp P            &kp H              &kp L     &kp M                &kp W            &kp PRINTSCREEN
-&kp TAB  &mt LEFT_ALT C  &mt LEFT_CONTROL T  &lt 3 I       &mt LEFT_SHIFT E  &mt LEFT_GUI O           &kp LEFT  &kp ENTER  &kp RIGHT  &mt RIGHT_GUI B  &mt RIGHT_SHIFT N  &lt 3 R   &mt RIGHT_CONTROL S  &mt RIGHT_ALT G  &kp DE_DOUBLE_QUOTES
-&to 0    &QEMark         &kp DE_COMMA        &kp V         &kp F             &kp Q           &none              &kp DOWN              &kp DE_Y         &kp K              &kp DE_Z  &kp DE_DOT           &kp DE_MINUS     &kp DE_SINGLE_QUOTE
-                                             &kp LEFT_ALT  &lt 3 DEL         &lt 2 ENTER                                              &lt 2 SPACE      &lt 1 BACKSPACE    &mo 4
+&kp ESC  &kp J           &kp D               &kp U         &kp A             &kp X                                &kp C_VOLUME_UP              &kp P            &kp H              &kp L     &kp M                &kp W            &kp PRINTSCREEN
+&kp TAB  &mt LEFT_ALT C  &mt LEFT_CONTROL T  &lt 3 I       &mt LEFT_SHIFT E  &mt LEFT_GUI O           &kp K_PREV  &kp K_MUTE       &kp K_NEXT  &mt RIGHT_GUI B  &mt RIGHT_SHIFT N  &lt 3 R   &mt RIGHT_CONTROL S  &mt RIGHT_ALT G  &kp DE_DOUBLE_QUOTES
+&to 0    &QEMark         &kp DE_COMMA        &kp V         &kp F             &kp Q           &none                &kp C_VOL_DN                 &kp DE_Y         &kp K              &kp DE_Z  &kp DE_DOT           &kp DE_MINUS     &kp DE_SINGLE_QUOTE
+                                             &kp LEFT_ALT  &lt 3 DEL         &lt 2 ENTER                                                       &lt 2 SPACE      &lt 1 BACKSPACE    &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -88,10 +88,10 @@
         Numbers {
             display-name = "Numbers";
             bindings = <
-&trans  &kp F1           &kp F2               &kp F3        &kp F4             &kp F5                                    &mmv MOVE_UP                     &kp F6            &kp F7              &kp F8        &kp F9                &kp F10           &kp F11
-&trans  &mt LEFT_ALT N1  &mt LEFT_CONTROL N2  &kp N3        &mt LEFT_SHIFT N4  &mt LEFT_GUI N5           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &mt RIGHT_GUI N6  &mt RIGHT_SHIFT N7  &kp N8        &mt RIGHT_CONTROL N9  &mt RIGHT_ALT N0  &kp F12
-&trans  &kp DE_EURO      &kp DE_COMMA         &kp DE_SLASH  &kp DE_ASTRK       &kp DE_DEGREE    &none                    &mmv MOVE_DOWN                   &kp DE_PERCENT    &kp DE_PLUS         &kp DE_MINUS  &kp DE_DOT            &kp DE_DOLLAR     &kp DE_SECTION
-                                              &trans        &trans             &trans                                                                     &trans            &trans              &trans
+&trans  &kp F1           &kp F2               &kp F3        &kp F4             &kp F5                           &none         &kp F6            &kp F7              &kp F8        &kp F9                &kp F10           &kp F11
+&trans  &mt LEFT_ALT N1  &mt LEFT_CONTROL N2  &kp N3        &mt LEFT_SHIFT N4  &mt LEFT_GUI N5           &none  &none  &none  &mt RIGHT_GUI N6  &mt RIGHT_SHIFT N7  &kp N8        &mt RIGHT_CONTROL N9  &mt RIGHT_ALT N0  &kp F12
+&trans  &kp DE_EURO      &kp DE_COMMA         &kp DE_SLASH  &kp DE_ASTRK       &kp DE_DEGREE    &none           &none         &kp DE_PERCENT    &kp DE_PLUS         &kp DE_MINUS  &kp DE_DOT            &kp DE_DOLLAR     &kp DE_SECTION
+                                              &trans        &trans             &trans                                         &trans            &trans              &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -100,10 +100,10 @@
         Symbols {
             display-name = "Symbols";
             bindings = <
-&trans  &kp DE_LT              &kp DE_GRAVE                    &kp DE_U_UMLAUT  &kp DE_A_UMLAUT         &kp DE_AMPERSAND                               &mmv MOVE_UP                     &kp DE_BACKSLASH       &kp DE_LEFT_BRACE                    &kp DE_RIGHT_BRACE        &kp DE_HASH              &none                    &none
-&trans  &mt LEFT_ALT DE_EQUAL  &mt LEFT_CONTROL DE_APOSTROPHE  &kp DE_TILDE     &mt LEFT_SHIFT DE_EURO  &mt LEFT_GUI DE_PIPE           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &mt RIGHT_GUI DE_PIPE  &mt RIGHT_SHIFT DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &mt RIGHT_CONTROL DE_SZ  &mt RIGHT_ALT RIGHT_ALT  &none
-&trans  &kp DE_GT              &kp DE_ACUTE                    &kp DE_AT        &kp DE_CARET            &kp DE_TILDE          &none                    &mmv MOVE_DOWN                   &kp DE_SLASH           &kp DE_LEFT_BRACKET                  &kp DE_RIGHT_BRACKET      &none                    &none                    &none
-                                                               &trans           &trans                  &trans                                                                          &trans                 &trans                               &trans
+&trans  &kp DE_LT              &kp DE_GRAVE                    &kp DE_U_UMLAUT  &kp DE_A_UMLAUT         &kp DE_AMPERSAND                             &kp C_VOLUME_UP                        &kp DE_BACKSLASH       &kp DE_LEFT_BRACE                    &kp DE_RIGHT_BRACE        &kp DE_HASH              &none                    &none
+&trans  &mt LEFT_ALT DE_EQUAL  &mt LEFT_CONTROL DE_APOSTROPHE  &kp DE_TILDE     &mt LEFT_SHIFT DE_EURO  &mt LEFT_GUI DE_PIPE           &kp C_REWIND  &kp C_PLAY_PAUSE   &kp C_FAST_FORWARD  &mt RIGHT_GUI DE_PIPE  &mt RIGHT_SHIFT DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &mt RIGHT_CONTROL DE_SZ  &mt RIGHT_ALT RIGHT_ALT  &none
+&trans  &kp DE_GT              &kp DE_ACUTE                    &kp DE_AT        &kp DE_CARET            &kp DE_TILDE          &none                  &kp C_VOLUME_DOWN                      &kp DE_SLASH           &kp DE_LEFT_BRACKET                  &kp DE_RIGHT_BRACKET      &none                    &none                    &none
+                                                               &trans           &trans                  &trans                                                                              &trans                 &trans                               &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
