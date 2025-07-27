@@ -104,42 +104,42 @@ layers:
   - '`'
   - Ü
   - Ä
-  - '~'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-high$$
-  - \
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '{'
   - '}'
-  - DE HASH
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '~'
+  - \
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '=', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '''', h: '$$mdi:apple-keyboard-control$$'}
   - '~'
   - {t: €, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '|', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: /, h: '$$mdi:apple-keyboard-command$$'}
   - REWIND
   - PLAY PAUSE
   - FAST FORWARD
-  - {t: '|', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: DE HASH, h: '$$mdi:apple-keyboard-command$$'}
   - {t: (, h: '$$mdi:apple-keyboard-shift$$'}
   - )
   - {t: ß, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '|', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - '>'
   - ´
-  - DE AT
   - DE CARET
-  - '~'
+  - DE AT
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-low$$
-  - /
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '['
   - ']'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '='
+  - /
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -184,11 +184,11 @@ layers:
   - Ctl+Y
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:alpha-w-box$$
   - $$mdi:apple-keyboard-caps$$
-  - SCROLLLOCK
   - Ins
+  - SCROLLLOCK
   - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
