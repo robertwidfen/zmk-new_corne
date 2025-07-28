@@ -263,9 +263,7 @@ parse_config:
     "&bl BL_CYCLE":
       tap: "BL CYCLE"
 
-  behavior_labels:
-    "&to":
-      label: "activate"
+ toggle_label: "activate"
       
   # ZMK
   zmk_keycode_map:
