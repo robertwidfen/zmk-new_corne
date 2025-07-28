@@ -258,9 +258,9 @@ parse_config:
     # Others
     "&studio_unlock":
       tap: "Studio Unlock"
-     "&bl BL_TOG":
+    "&bl BL_TOG":
       tap: "BL TOGGLE"
-     "&bl BL_CYCLE":
+    "&bl BL_CYCLE":
       tap: "BL CYCLE"
 
   # ZMK
