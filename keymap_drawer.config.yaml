@@ -258,12 +258,15 @@ parse_config:
     # Others
     "&studio_unlock":
       tap: "Studio Unlock"
-    "&to":
-      tap: "layer"
+     "&bl BL_TOG":
+      tap: "BL TOGGLE"
+     "&bl BL_CYCLE":
+      tap: "BL CYCLE"
 
   # ZMK
   zmk_keycode_map:
-    # DE
+    "&to": "layer"
+     # DE
     DE_Y: "Y"
     DE_Z: "Z"
     DE_A_UMLAUT: "Ä"
