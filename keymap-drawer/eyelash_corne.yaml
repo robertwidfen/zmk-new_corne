@@ -29,13 +29,13 @@ layers:
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: G, h: '$$mdi:apple-keyboard-option$$'}
   - '"'
-  - {t: BONEish, h: toggle}
+  - layer
   - {t: '?', s: '!'}
   - {t: ',', s: ;}
   - V
   - F
   - Q
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
   - $$mdi:volume-low$$
   - Y
   - K
@@ -56,7 +56,7 @@ layers:
   - F3
   - F4
   - F5
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
   - F6
   - F7
   - F8
@@ -69,9 +69,9 @@ layers:
   - '3'
   - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '5', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - {t: '6', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '7', h: '$$mdi:apple-keyboard-shift$$'}
   - '8'
@@ -84,8 +84,8 @@ layers:
   - /
   - '*'
   - °
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
+  - {type: none}
   - '%'
   - {t: +, s: '*'}
   - {t: '-', s: _}
@@ -104,14 +104,14 @@ layers:
   - '`'
   - Ü
   - Ä
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
   - $$mdi:volume-high$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
   - '{'
   - '}'
   - '~'
   - \
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '=', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '''', h: '$$mdi:apple-keyboard-control$$'}
@@ -126,21 +126,21 @@ layers:
   - )
   - {t: ß, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '|', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - '>'
   - ´
   - ^
   - '@'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
+  - {type: none}
   - $$mdi:volume-low$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
   - '['
   - ']'
   - '='
   - /
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -151,7 +151,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Q
   - Ctl+W
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
   - Ctl+A
   - Gui+R
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
@@ -182,9 +182,9 @@ layers:
   - Ctl+V
   - Ctl+Z
   - Ctl+Y
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
   - $$mdi:alpha-w-box$$
   - $$mdi:apple-keyboard-caps$$
   - Ins
@@ -204,12 +204,12 @@ layers:
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: BONEish, h: toggle}
-  - {t: Numbers, h: toggle}
-  - {t: Symbols, h: toggle}
-  - {t: Command, h: toggle}
-  - {t: System, h: toggle}
-  - {t: BONEish, h: toggle}
+  - layer
+  - layer
+  - layer
+  - layer
+  - layer
+  - layer
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - '&soft_off'
@@ -225,13 +225,13 @@ layers:
   - RGB SPI
   - RGB EFF
   - RGB COLOR HSB(182,42,43)
-  - '&studio_unlock'
+  - Studio Unlock
   - '&bl BL_TOG'
   - '&bl BL_CYCLE'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
+  - {type: none}
   - RGB OFF
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - RGB BRD
   - RGB HUD
