@@ -121,7 +121,7 @@ layers:
   - REWIND
   - PLAY PAUSE
   - FAST FORWARD
-  - {t: DE HASH, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '#', h: '$$mdi:apple-keyboard-command$$'}
   - {t: (, h: '$$mdi:apple-keyboard-shift$$'}
   - )
   - {t: ß, h: '$$mdi:apple-keyboard-control$$'}
@@ -130,8 +130,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '>'
   - ´
-  - DE CARET
-  - DE AT
+  - ^
+  - '@'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-low$$
