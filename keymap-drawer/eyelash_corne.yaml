@@ -13,7 +13,7 @@ layers:
   - L
   - M
   - W
-  - PRINTSCREEN
+  - Print Screen
   - $$mdi:keyboard-tab$$
   - {t: C, h: '$$mdi:apple-keyboard-option$$'}
   - {t: T, h: '$$mdi:apple-keyboard-control$$'}
@@ -188,7 +188,7 @@ layers:
   - $$mdi:alpha-w-box$$
   - $$mdi:apple-keyboard-caps$$
   - Ins
-  - SCROLLLOCK
+  - Scroll Lock
   - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
