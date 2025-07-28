@@ -263,9 +263,12 @@ parse_config:
     "&bl BL_CYCLE":
       tap: "BL CYCLE"
 
+  behavior_labels:
+    "&to":
+      label: "activate"
+      
   # ZMK
   zmk_keycode_map:
-    &to: "layer"
      # DE
     DE_Y: "Y"
     DE_Z: "Z"
