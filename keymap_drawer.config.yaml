@@ -477,7 +477,9 @@ parse_config:
     RSHFT: $$mdi:apple-keyboard-shift$$
     RCMD: $$mdi:apple-keyboard-command$$
     RG: $$mdi:apple-keyboard-command$$
-    PSCRN: $$mdi:printer-outline$$
+    # PSCRN: $$mdi:printer-outline$$
+    PRINTSCREEN: "Print Screen"
+    SCROLLLOCK: "Scroll Lock"
     RIGHT_COMMAND: $$mdi:apple-keyboard-command$$
     PAGE_UP:
       tap: 'PgUp'
