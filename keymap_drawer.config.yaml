@@ -265,7 +265,7 @@ parse_config:
 
   # ZMK
   zmk_keycode_map:
-    #"&to": "layer"
+    "&to": "layer"
      # DE
     DE_Y: "Y"
     DE_Z: "Z"
