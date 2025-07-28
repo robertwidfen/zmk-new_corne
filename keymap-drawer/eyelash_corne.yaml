@@ -66,7 +66,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '2', h: '$$mdi:apple-keyboard-control$$'}
-  - '3'
+  - {t: '3', h: Command}
   - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '5', h: '$$mdi:apple-keyboard-command$$'}
   - {type: none}
@@ -74,7 +74,7 @@ layers:
   - {type: none}
   - {t: '6', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '7', h: '$$mdi:apple-keyboard-shift$$'}
-  - '8'
+  - {t: '8', h: Command}
   - {t: '9', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '0', h: '$$mdi:apple-keyboard-option$$'}
   - F12
@@ -83,7 +83,7 @@ layers:
   - {t: ',', s: ;}
   - /
   - '*'
-  - °
+  - '='
   - {type: none}
   - {type: none}
   - '%'
@@ -104,9 +104,9 @@ layers:
   - '`'
   - Ü
   - Ä
-  - {type: none}
+  - DE DEG
   - $$mdi:volume-high$$
-  - {type: none}
+  - Gui+$$mdi:keyboard-space$$
   - '{'
   - '}'
   - '~'
@@ -115,7 +115,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '=', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '''', h: '$$mdi:apple-keyboard-control$$'}
-  - '~'
+  - {t: '~', h: Command}
   - {t: €, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: /, h: '$$mdi:apple-keyboard-command$$'}
   - REWIND
@@ -123,7 +123,7 @@ layers:
   - FAST FORWARD
   - {t: '#', h: '$$mdi:apple-keyboard-command$$'}
   - {t: (, h: '$$mdi:apple-keyboard-shift$$'}
-  - )
+  - {t: ), h: Command}
   - {t: ß, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '|', h: '$$mdi:apple-keyboard-option$$'}
   - {type: none}
@@ -164,7 +164,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - {t: Command, type: held}
+  - {type: held}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -192,9 +192,9 @@ layers:
   - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
+  - {type: held alternate}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   System:
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
