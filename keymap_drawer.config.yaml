@@ -258,12 +258,16 @@ parse_config:
     # Others
     "&studio_unlock":
       tap: "Studio Unlock"
-    "&to":
-      tap: "layer"
+    "&bl BL_TOG":
+      tap: "BL TOGGLE"
+    "&bl BL_CYCLE":
+      tap: "BL CYCLE"
 
+  toggle_label: "activate"
+      
   # ZMK
   zmk_keycode_map:
-    # DE
+     # DE
     DE_Y: "Y"
     DE_Z: "Z"
     DE_A_UMLAUT: "Ä"
@@ -473,7 +477,9 @@ parse_config:
     RSHFT: $$mdi:apple-keyboard-shift$$
     RCMD: $$mdi:apple-keyboard-command$$
     RG: $$mdi:apple-keyboard-command$$
-    PSCRN: $$mdi:printer-outline$$
+    # PSCRN: $$mdi:printer-outline$$
+    PRINTSCREEN: "Print Screen"
+    SCROLLLOCK: "Scroll Lock"
     RIGHT_COMMAND: $$mdi:apple-keyboard-command$$
     PAGE_UP:
       tap: 'PgUp'

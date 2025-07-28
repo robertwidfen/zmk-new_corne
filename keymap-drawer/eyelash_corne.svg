@@ -364,7 +364,9 @@ rect.held, rect.combo.held {
 <g transform="translate(952, 49)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">PRINTSCRE…</tspan></text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.6em">Print</tspan><tspan x="0" dy="1.2em">Screen</tspan>
+</text>
 </g>
 <g transform="translate(28, 105)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -456,7 +458,9 @@ rect.held, rect.combo.held {
 <g transform="translate(28, 161)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">layer</text>
+<a href="#BONEish">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">BONEish</tspan></text>
+</a><text x="0" y="24" class="key hold"><tspan style="font-size: 75%">activate</tspan></text>
 </g>
 <g transform="translate(84, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1284,7 +1288,9 @@ rect.held, rect.combo.held {
 <g transform="translate(896, 161)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">SCROLLLOCK</tspan></text>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.6em">Scroll</tspan><tspan x="0" dy="1.2em">Lock</tspan>
+</text>
 </g>
 <g transform="translate(952, 161)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1373,32 +1379,44 @@ rect.held, rect.combo.held {
 <g transform="translate(672, 41)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">layer</text>
+<a href="#BONEish">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">BONEish</tspan></text>
+</a><text x="0" y="24" class="key hold"><tspan style="font-size: 75%">activate</tspan></text>
 </g>
 <g transform="translate(728, 35)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">layer</text>
+<a href="#Numbers">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">Numbers</tspan></text>
+</a><text x="0" y="24" class="key hold"><tspan style="font-size: 75%">activate</tspan></text>
 </g>
 <g transform="translate(784, 28)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">layer</text>
+<a href="#Symbols">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">Symbols</tspan></text>
+</a><text x="0" y="24" class="key hold"><tspan style="font-size: 75%">activate</tspan></text>
 </g>
 <g transform="translate(840, 35)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">layer</text>
+<a href="#Command">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">Command</tspan></text>
+</a><text x="0" y="24" class="key hold"><tspan style="font-size: 75%">activate</tspan></text>
 </g>
 <g transform="translate(896, 49)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">layer</text>
+<a href="#System">
+<text x="0" y="-4" class="key tap layer-activator">System</text>
+</a><text x="0" y="24" class="key hold"><tspan style="font-size: 75%">activate</tspan></text>
 </g>
 <g transform="translate(952, 49)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">layer</text>
+<a href="#BONEish">
+<text x="0" y="-4" class="key tap layer-activator"><tspan style="font-size: 86%">BONEish</tspan></text>
+</a><text x="0" y="24" class="key hold"><tspan style="font-size: 75%">activate</tspan></text>
 </g>
 <g transform="translate(28, 105)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1505,14 +1523,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">&amp;bl</tspan><tspan x="0" dy="1.2em">BL_TOG</tspan>
+<tspan x="0" dy="-0.6em">BL</tspan><tspan x="0" dy="1.2em">TOGGLE</tspan>
 </text>
 </g>
 <g transform="translate(140, 147)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 75%">&amp;bl</tspan><tspan x="0" dy="1.2em" style="font-size: 75%">BL_CYCLE</tspan>
+<tspan x="0" dy="-0.6em">BL</tspan><tspan x="0" dy="1.2em">CYCLE</tspan>
 </text>
 </g>
 <g transform="translate(196, 140)" class="key none keypos-31">
