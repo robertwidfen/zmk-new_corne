@@ -117,7 +117,7 @@ layers:
   - {t: '''', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '~', h: Command}
   - {t: €, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: /, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: Ö, h: '$$mdi:apple-keyboard-command$$'}
   - REWIND
   - PLAY PAUSE
   - FAST FORWARD
