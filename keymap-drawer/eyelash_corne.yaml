@@ -109,7 +109,7 @@ layers:
   - Gui+$$mdi:keyboard-space$$
   - '{'
   - '}'
-  - '~'
+  - '&'
   - \
   - {type: none}
   - {t: '$$mdi:transfer$$', type: trans}

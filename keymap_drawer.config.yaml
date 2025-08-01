@@ -287,7 +287,7 @@ parse_config:
     DE_GRAVE: "`"
     DE_APOSTROPHE: "'"
     DE_ACUTE: "´"
-    DE_AMPERSAND: "~"
+    DE_AMPERSAND: "&"
     DE_PIPE: "|"
     DE_TILDE: "~"
     DE_BACKSLASH: "\\"
