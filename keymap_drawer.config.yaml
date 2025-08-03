@@ -319,6 +319,7 @@ parse_config:
     QEMark:
       tap: "?"
       shifted: "!"
+    LG(SPACE): "😀"
     
     # Symbols
     EXCLAMATION: "!"
