@@ -189,7 +189,7 @@ layers:
   - $$mdi:apple-keyboard-caps$$
   - Ins
   - Scroll Lock
-  - PAUSE BREAK
+  - Pause Break
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - {type: held alternate}
