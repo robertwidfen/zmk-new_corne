@@ -184,7 +184,7 @@ layers:
   - Ctl+Y
   - {type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {type: none}
+  - '&key_repeat'
   - $$mdi:alpha-w-box$$
   - $$mdi:apple-keyboard-caps$$
   - Ins
