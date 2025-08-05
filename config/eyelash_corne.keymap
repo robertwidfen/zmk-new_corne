@@ -114,7 +114,7 @@
             bindings = <
 &trans  &kp LC(Q)  &kp LC(W)  &none      &kp LC(A)  &kp LG(R)                              &mmv MOVE_UP                     &kp LC(HOME)     &kp HOME    &kp END    &kp PG_UP   &kp PG_DN       &kp RC(END)
 &trans  &kp LALT   &kp LCTRL  &none      &kp LSHFT  &kp LEFT_GUI           &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LC(PAGE_UP)  &kp LEFT    &kp RIGHT  &kp UP      &kp DOWN        &kp RC(PAGE_DOWN)
-&trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Z)  &kp LC(Y)     &none                    &mmv MOVE_DOWN                   &none            &caps_word  &kp CAPS   &kp INSERT  &kp SCROLLLOCK  &kp PAUSE_BREAK
+&trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Z)  &kp LC(Y)     &none                    &mmv MOVE_DOWN                   &key_repeat      &caps_word  &kp CAPS   &kp INSERT  &kp SCROLLLOCK  &kp PAUSE_BREAK
                               &trans     &trans     &trans                                                                  &trans           &trans      &trans
             >;
 
