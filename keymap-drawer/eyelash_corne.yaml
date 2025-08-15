@@ -20,9 +20,9 @@ layers:
   - {t: I, h: Command}
   - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: O, h: '$$mdi:apple-keyboard-command$$'}
-  - PREV
-  - MUTE
-  - NEXT
+  - $$mdi:skip-previous$$
+  - $$mdi:volume-off$$
+  - $$mdi:skip-next$$
   - {t: B, h: '$$mdi:apple-keyboard-command$$'}
   - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: R, h: Command}
