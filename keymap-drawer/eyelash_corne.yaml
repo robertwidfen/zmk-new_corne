@@ -44,10 +44,10 @@ layers:
   - {t: '-', s: _}
   - ''''
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:backspace-reverse-outline$$', h: Command}
+  - {t: '$$mdi:backspace$$', h: Command}
   - {t: '$$mdi:keyboard-return$$', h: Symbols}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
-  - {t: '$$mdi:backspace$$', h: Numbers}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Numbers}
   - System
   Numbers:
   - {t: '$$mdi:transfer$$', type: trans}
