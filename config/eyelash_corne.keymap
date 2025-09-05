@@ -34,6 +34,10 @@
     trigger-period-ms = <16>;
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS DE_A_UMLAUT DE_U_UMLAUT DE_O_UMLAUT>;
+};
+
 / {
     behaviors {
         PrintScreen: PrintScreen {
