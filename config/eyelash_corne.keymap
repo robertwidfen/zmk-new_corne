@@ -35,7 +35,7 @@
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS DE_A_UMLAUT DE_U_UMLAUT DE_O_UMLAUT>;
+    continue-list = <LEFT_SHIFT RIGHT_SHIFT DE_UNDERSCORE DE_MINUS DE_A_UMLAUT DE_U_UMLAUT DE_O_UMLAUT>;
 };
 
 / {
