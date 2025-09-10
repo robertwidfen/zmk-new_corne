@@ -39,6 +39,20 @@
 };
 
 / {
+    macros {
+        reliable_altgr: reliable_altgr {
+            compatible = "zmk,behavior-macro-one-param";
+            label = "RELIABLE_ALTGR";
+            #binding-cells = <1>;
+            bindings = <&macro_press &kp RALT>,
+                      <&macro_param_1to1>,
+                      <&macro_tap &kp MACRO_PLACEHOLDER>,
+                      <&macro_release &kp RALT>;
+            wait-ms = <80>;   // for RDP
+            tap-ms = <50>;
+        };
+    };
+
     behaviors {
         PrintScreen: PrintScreen {
             compatible = "zmk,behavior-tap-dance";
