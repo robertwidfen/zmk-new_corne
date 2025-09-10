@@ -262,9 +262,28 @@ parse_config:
       tap: "BL TOGGLE"
     "&bl BL_CYCLE":
       tap: "BL CYCLE"
+    # AltGr keys
+    "&reliable_altgr DE_LEFT_BRACE":
+      tap: "{"
+    "&reliable_altgr DE_RIGHT_BRACE":
+      tap: "}"
+    "&reliable_altgr DE_LEFT_BRACKET":
+      tap: "["
+    "&reliable_altgr DE_LEFT_BRACKET":
+      tap: "]"
+    "&reliable_altgr DE_TILDE":
+      tap: "~"
+    "&reliable_altgr DE_AT":
+      tap: "@"
+    "&reliable_altgr DE_PIPE":
+      tap: "|"
+    "&reliable_altgr DE_EURO":
+      tap: "€"
+
+
 
   toggle_label: "activate"
-      
+
   # ZMK
   zmk_keycode_map:
      # DE
@@ -305,16 +324,16 @@ parse_config:
     DE_LT: "<"
     DE_EQUAL: "="
     DE_GT: ">"
-    DE_PLUS: 
+    DE_PLUS:
       tap: "+"
       shifted: "*"
-    DE_DOT: 
+    DE_DOT:
       tap: "."
       shifted: ":"
-    DE_MINUS: 
+    DE_MINUS:
       tap: "-"
       shifted: "_"
-    DE_COMMA: 
+    DE_COMMA:
       tap: ","
       shifted: ";"
     QEMark:
@@ -322,7 +341,7 @@ parse_config:
       shifted: "!"
     LG(SPACE): "😀"
     PAUSE_BREAK: "Pause Break"
-    
+
     # Symbols
     EXCLAMATION: "!"
     EXCL: "!"
@@ -559,7 +578,7 @@ parse_config:
     C_AL_LOCK: $$mdi:lock$$
     K_CANCEL: $$mdi:close-box$$
     K_FIND: $$mdi:apple-finder$$
-    # Command + 
+    # Command +
     LG(A):
       tap: 'A'
       hold: $$mdi:apple-keyboard-command$$

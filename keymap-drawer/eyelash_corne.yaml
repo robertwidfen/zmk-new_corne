@@ -107,8 +107,8 @@ layers:
   - °
   - $$mdi:volume-high$$
   - 😀
-  - '{'
-  - '}'
+  - '&reliable_altgr DE_N7'
+  - '&reliable_altgr DE_N0'
   - '&'
   - \
   - {type: none}
@@ -131,13 +131,13 @@ layers:
   - '>'
   - ´
   - ^
-  - '@'
-  - {type: none}
+  - '&reliable_altgr DE_TILDE'
+  - '&reliable_altgr DE_AT'
   - {type: none}
   - $$mdi:volume-low$$
   - {type: none}
-  - '['
-  - ']'
+  - '&reliable_altgr N8'
+  - '&reliable_altgr DE_RIGHT_BRACKET'
   - '='
   - /
   - {type: none}
