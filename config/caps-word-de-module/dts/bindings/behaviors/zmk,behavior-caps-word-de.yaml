@@ -11,5 +11,5 @@ properties:
     required: true
   continue-list:
     type: array
-    default: []
+    default: [DE_UNDERSCORE DE_MINUS DE_A_UMLAUT DE_U_UMLAUT DE_O_UMLAUT]
 
