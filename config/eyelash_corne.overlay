@@ -1,9 +1,7 @@
-// block comments seem not to work here
 / {
     behaviors {
         CAPS_WORD_DE: caps_word_de {
             compatible = "zmk,behavior-caps-word-de";
-            label = "CAPS_WORD_DE";
             #binding-cells = <0>;
             continue-list = <DE_UNDERSCORE DE_MINUS DE_A_UMLAUT DE_U_UMLAUT DE_O_UMLAUT>;
         };
