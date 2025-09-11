@@ -2,6 +2,7 @@
     behaviors {
         CAPS_WORD_DE: caps_word_de {
             compatible = "zmk,behavior-caps-word-de";
+            label = "CAPS_WORD_DE";
             #binding-cells = <0>;
             continue-list = <>;
         };
