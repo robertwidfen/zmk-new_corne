@@ -11,4 +11,3 @@ properties:
     type: array
     default: [DE_UNDERSCORE, DE_MINUS, DE_A_UMLAUT, DE_U_UMLAUT, DE_O_UMLAUT]
 
-binding-cells: [0]
