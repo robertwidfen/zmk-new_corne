@@ -81,6 +81,13 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&reliable_altgr>;
         };
+
+        caps_word_de: caps_word_de {
+             compatible = "zmk,behavior-caps-word-de";
+             #binding-cells = <0>;
+             continue-list = <DE_UNDERSCORE DE_MINUS>;
+             mods = <(MOD_LSFT)>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
