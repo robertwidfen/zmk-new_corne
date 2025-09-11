@@ -14,7 +14,6 @@ manifest:
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
-    - name: caps-word-de-module
-      path: caps-word-de-module
   self:
     path: config
+    west-commands: caps-word-de-module/west-commands.yml
