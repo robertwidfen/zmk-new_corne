@@ -136,8 +136,8 @@ layers:
   - {type: none}
   - $$mdi:volume-low$$
   - {type: none}
+  - '['
   - ']'
-  - '&reliable_altgr DE_RIGHT_BRACKET'
   - '='
   - /
   - {type: none}
