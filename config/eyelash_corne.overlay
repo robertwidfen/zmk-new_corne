@@ -3,6 +3,7 @@
         CAPS_WORD_DE: caps_word_de {
             compatible = "zmk,behavior-caps-word-de";
             #binding-cells = <0>;
+            continue-list = <>;
         };
     };
 };
