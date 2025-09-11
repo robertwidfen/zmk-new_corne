@@ -4,4 +4,4 @@ build:
   settings:
     board_root: .
     dts_root: .
-
+    dts_bindings: dts/bindings
