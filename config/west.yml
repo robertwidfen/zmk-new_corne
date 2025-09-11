@@ -16,5 +16,5 @@ manifest:
       import: app/west.yml
   self:
     path: config
-#    west-commands: caps-word-de-module/west-commands.yml
+    west-commands: caps-word-de-module/west-commands.yml
 
