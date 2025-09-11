@@ -1,0 +1,11 @@
+/ {
+    behaviors {
+        caps_word_de: caps_word_de {
+            compatible = "zmk,behavior-caps-word-de";
+            label = "CAPS_WORD_DE";
+            #binding-cells = <0>;
+            continue-list = <UNDERSCORE MINUS BACKSPACE DELETE 
+                           SEMICOLON APOSTROPHE LEFT_BRACKET>; // ö ä ü
+        };
+    };
+};
