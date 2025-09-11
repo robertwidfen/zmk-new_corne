@@ -269,7 +269,7 @@ parse_config:
       tap: "}"
     "&reliable_altgr DE_LEFT_BRACKET":
       tap: "["
-    "&reliable_altgr DE_LEFT_BRACKET":
+    "&reliable_altgr DE_RIGHT_BRACKET":
       tap: "]"
     "&reliable_altgr DE_TILDE":
       tap: "~"
@@ -279,8 +279,6 @@ parse_config:
       tap: "|"
     "&reliable_altgr DE_EURO":
       tap: "€"
-
-
 
   toggle_label: "activate"
 
