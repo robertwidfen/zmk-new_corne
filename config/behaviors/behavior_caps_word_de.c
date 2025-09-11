@@ -108,13 +108,13 @@ static bool caps_word_de_is_caps_includelist(const struct behavior_caps_word_de_
     return false;
 }
 
-static bool caps_word_de_is_alpha(uint8_t ) {
-     if (usage_id >= HID_USAGE_KEY_KEYBOARD_A &&
-         usage_id <= HID_USAGE_KEY_KEYBOARD_Z) {
+static bool caps_word_de_is_alpha(uint8_t usage_id) {
+    if (usage_id >= HID_USAGE_KEY_KEYBOARD_A &&
+        usage_id <= HID_USAGE_KEY_KEYBOARD_Z) {
         return true;
     }
 
-    // umlauts
+    // German umlauts
     switch (usage_id) {
     case HID_USAGE_KEY_KEYBOARD_SEMICOLON_AND_COLON:     // ö/Ö
     case HID_USAGE_KEY_KEYBOARD_APOSTROPHE_AND_QUOTE:    // ä/Ä
@@ -132,7 +132,7 @@ static bool caps_word_de_is_numeric(uint8_t usage_id) {
 
 static void caps_word_de_enhance_usage(const struct behavior_caps_word_de_config *config,
                                     struct zmk_keycode_state_changed *ev) {
-    if (ev->usage_page != HID_USAGE_KEY || !caps_word_is_alpha(ev->keycode)) {
+    if (ev->usage_page != HID_USAGE_KEY || !caps_word_de_is_alpha(ev->keycode)) {
         return;
     }
 
@@ -158,9 +158,9 @@ static int caps_word_de_keycode_state_changed_listener(const zmk_event_t *eh) {
 
         caps_word_de_enhance_usage(config, ev);
 
-        if (!caps_word_is_alpha(ev->keycode) && !caps_word_is_numeric(ev->keycode) &&
+        if (!caps_word_de_is_alpha(ev->keycode) && !caps_word_de_is_numeric(ev->keycode) &&
             !is_mod(ev->usage_page, ev->keycode) &&
-            !caps_word_is_caps_includelist(config, ev->usage_page, ev->keycode,
+            !caps_word_de_is_caps_includelist(config, ev->usage_page, ev->keycode,
                                            ev->implicit_modifiers)) {
             LOG_DBG("Deactivating caps_word_de for 0x%02X - 0x%02X", ev->usage_page, ev->keycode);
             deactivate_caps_word_de(dev);
@@ -172,20 +172,24 @@ static int caps_word_de_keycode_state_changed_listener(const zmk_event_t *eh) {
 
 #define CAPS_WORD_DE_LABEL(i, _n) DT_INST_LABEL(i)
 
-#define PARSE_BREAK(i)                                                                             \
+#define PARSE_BREAK(i) \
     {.page = ZMK_HID_USAGE_PAGE(i), .id = ZMK_HID_USAGE_ID(i), .implicit_modifiers = SELECT_MODS(i)}
 
 #define BREAK_ITEM(i, n) PARSE_BREAK(DT_INST_PROP_BY_IDX(n, continue_list, i))
 
-#define KP_INST(n)                                                                                 \
-    static struct behavior_caps_word_de_data behavior_caps_word_de_data_##n = {.active = false};         \
-    static const struct behavior_caps_word_de_config behavior_caps_word_de_config_##n = {                \
-        .mods = DT_INST_PROP_OR(n, mods, MOD_LSFT),                                                \
-        .continuations = {LISTIFY(DT_INST_PROP_LEN(n, continue_list), BREAK_ITEM, (, ), n)},       \
-        .continuations_count = DT_INST_PROP_LEN(n, continue_list),                                 \
-    };                                                                                             \
-    BEHAVIOR_DT_INST_DEFINE(n, NULL, NULL, &behavior_caps_word_de_data_##n,                           \
-                            &behavior_caps_word_de_config_##n, POST_KERNEL,                           \
+#define KP_INST(n) \
+    static struct behavior_caps_word_de_data behavior_caps_word_de_data_##n = {.active = false}; \
+    static const struct behavior_caps_word_de_config behavior_caps_word_de_config_##n = { \
+        .mods = DT_INST_PROP_OR(n, mods, MOD_LSFT), \
+        .continuations = {LISTIFY(DT_INST_PROP_LEN(n, continue_list), BREAK_ITEM, (, ), n)}, \
+        .continuations_count = DT_INST_PROP_LEN(n, continue_list), \
+    }; \
+    static int caps_word_de_init(const struct device *dev) { \
+        LOG_INF("CAPS_WORD_DE: Behavior initialized"); \
+        return 0; \
+    } \
+    BEHAVIOR_DT_INST_DEFINE(n, caps_word_de_init, NULL, &behavior_caps_word_de_data_##n, \
+                            &behavior_caps_word_de_config_##n, POST_KERNEL, \
                             CONFIG_KERNEL_INIT_PRIORITY_DEFAULT, &behavior_caps_word_de_driver_api);
 
 DT_INST_FOREACH_STATUS_OKAY(KP_INST)
