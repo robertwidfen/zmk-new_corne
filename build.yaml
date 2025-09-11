@@ -12,6 +12,6 @@ include:
     #snippet: zmk-usb-logging   # Uncomment to log over USB.
   - board: eyelash_corne_left
     shield: settings_reset
-    artifact-name: reset_settings_eyelash_corne
-    #snippet: zmk-usb-logging
+    artifact-name: settings_reset_eyelash_corne
+    #snippet: zmk-usb-logging   # Uncomment to log over USB.
 
