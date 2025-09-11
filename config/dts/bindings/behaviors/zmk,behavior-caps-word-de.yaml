@@ -3,10 +3,9 @@ description: |
 
 compatible: "zmk,behavior-caps-word-de"
 
+include: zero_param.yaml
+
 properties:
-  label:
-    type: string
-    required: true
   continue-list:
     type: array
     default: [DE_UNDERSCORE, DE_MINUS, DE_A_UMLAUT, DE_U_UMLAUT, DE_O_UMLAUT]
