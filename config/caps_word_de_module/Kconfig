@@ -1,0 +1,4 @@
+config ZMK_BEHAVIOR_CAPS_WORD_DE
+    bool "Enable caps_word_de behavior"
+    default y
+

@@ -1,0 +1,15 @@
+description: |
+  German caps_word behavior that capitalizes umlauts
+
+compatible: "zmk,behavior-caps-word-de"
+
+include: one-param-behavior.yaml
+
+properties:
+  label:
+    type: string
+    required: true
+  continue-list:
+    type: array
+    default: []
+
