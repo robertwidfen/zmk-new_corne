@@ -170,8 +170,6 @@ static int caps_word_de_keycode_state_changed_listener(const zmk_event_t *eh) {
     return ZMK_EV_EVENT_BUBBLE;
 }
 
-#define CAPS_WORD_DE_LABEL(i, _n) DT_INST_LABEL(i)
-
 #define PARSE_BREAK(i) \
     {.page = ZMK_HID_USAGE_PAGE(i), .id = ZMK_HID_USAGE_ID(i), .implicit_modifiers = SELECT_MODS(i)}
 
@@ -184,11 +182,11 @@ static int caps_word_de_keycode_state_changed_listener(const zmk_event_t *eh) {
         .continuations = {LISTIFY(DT_INST_PROP_LEN(n, continue_list), BREAK_ITEM, (, ), n)}, \
         .continuations_count = DT_INST_PROP_LEN(n, continue_list), \
     }; \
-    static int caps_word_de_init(const struct device *dev) { \
+    static int caps_word_de_init_##n(const struct device *dev) { \
         LOG_INF("CAPS_WORD_DE: Behavior initialized"); \
         return 0; \
     } \
-    BEHAVIOR_DT_INST_DEFINE(n, caps_word_de_init, NULL, &behavior_caps_word_de_data_##n, \
+    BEHAVIOR_DT_INST_DEFINE(n, caps_word_de_init_##n, NULL, &behavior_caps_word_de_data_##n, \
                             &behavior_caps_word_de_config_##n, POST_KERNEL, \
                             CONFIG_KERNEL_INIT_PRIORITY_DEFAULT, &behavior_caps_word_de_driver_api);
 
