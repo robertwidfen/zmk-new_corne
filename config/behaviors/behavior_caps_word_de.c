@@ -108,14 +108,14 @@ static bool caps_word_de_is_caps_includelist(const struct behavior_caps_word_de_
     return false;
 }
 
-static bool caps_word_de_is_alpha(uint8_t usage_id) {
-     if (ZMK_HID_USAGE_ID(key) >= HID_USAGE_KEY_KEYBOARD_A &&
-        ZMK_HID_USAGE_ID(key) <= HID_USAGE_KEY_KEYBOARD_Z) {
+static bool caps_word_de_is_alpha(uint8_t ) {
+     if (usage_id >= HID_USAGE_KEY_KEYBOARD_A &&
+         usage_id <= HID_USAGE_KEY_KEYBOARD_Z) {
         return true;
     }
 
     // umlauts
-    switch (ZMK_HID_USAGE_ID(key)) {
+    switch (usage_id) {
     case HID_USAGE_KEY_KEYBOARD_SEMICOLON_AND_COLON:     // ö/Ö
     case HID_USAGE_KEY_KEYBOARD_APOSTROPHE_AND_QUOTE:    // ä/Ä
     case HID_USAGE_KEY_KEYBOARD_LEFT_BRACKET_AND_BRACE:  // ü/Ü
