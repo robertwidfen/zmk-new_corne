@@ -75,7 +75,7 @@
             mods = <(MOD_RSFT)>;
         };
 
-        ralt_altgr: ralt_altgr {
+        : ralt_altgr {
             compatible = "zmk,behavior-hold-tap";
             label = "RALT_ALTGR";
             #binding-cells = <2>;
@@ -84,8 +84,6 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&reliable_altgr>;
         };
-    };
-
     };
 
     rgb_encoder: rgb_encoder {
