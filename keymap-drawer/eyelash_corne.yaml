@@ -185,7 +185,7 @@ layers:
   - {type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '&key_repeat'
-  - '&caps_word_de'
+  - '&caps_word_de_behavior'
   - $$mdi:apple-keyboard-caps$$
   - Ins
   - Scroll Lock
