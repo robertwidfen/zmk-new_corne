@@ -1,0 +1,8 @@
+&behaviors {
+    caps_word_de: caps_word_de {
+        compatible = "zmk,behavior-caps-word-de";
+        label = "CAPS_WORD_DE";
+        continue-list = <&kp LSHFT &kp RSHFT &kp DE_MINUS &kp DE_UNDERSCORE &kp DE_A_UMLAUT &kp DE_O_UMLAUT &kp DE_U_UMLAUT>;
+    };
+};
+
