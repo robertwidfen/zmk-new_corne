@@ -75,7 +75,7 @@
             mods = <(MOD_RSFT)>;
         };
 
-        : ralt_altgr {
+        ralt_altgr : ralt_altgr {
             compatible = "zmk,behavior-hold-tap";
             label = "RALT_ALTGR";
             #binding-cells = <2>;
