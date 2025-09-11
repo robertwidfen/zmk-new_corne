@@ -58,7 +58,6 @@
     behaviors {
         PrintScreen: PrintScreen {
             compatible = "zmk,behavior-tap-dance";
-            label = "PRINTSCREEN";
             #binding-cells = <0>;
             bindings =
                 <&kp PRINTSCREEN>,
@@ -68,7 +67,6 @@
 
         QEMark: QEMark {
             compatible = "zmk,behavior-mod-morph";
-            label = "QEMARK";
             bindings = <&kp DE_QUESTION>, <&kp DE_EXCLAMATION>;
 
             #binding-cells = <0>;
@@ -77,7 +75,6 @@
 
         ralt_altgr: ralt_altgr {
             compatible = "zmk,behavior-hold-tap";
-            label = "RALT_ALTGR";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
