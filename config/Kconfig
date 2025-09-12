@@ -1,0 +1,5 @@
+config ZMK_BEHAVIOR_CAPS_WORD_DE
+    bool "Enable caps word DE behavior"
+    default n
+    help
+      Enable the German caps word behavior that handles umlauts.
