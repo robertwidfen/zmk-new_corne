@@ -8,10 +8,11 @@ manifest:
     # - https://zmk.dev/docs/features/modules
     # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
 
-    # https://github.com/urob/zmk-leader-key/
+    # https://github.com/urob/zmk-leader-key
     - name: urob
       url-base: https://github.com/urob
-
+    - name: robertwidfen
+      url-base: https://github.com/robertwidfen
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
@@ -23,6 +24,10 @@ manifest:
     - name: zmk-leader-key
       remote: urob
       revision: v0.3 # set to same as ZMK version above
+    - name: zmk-module-caps-word-de
+      remote: robertwidfen
+      revision: main
+    #   revision: v0.3 # set to same as ZMK version above
 
   self:
     path: config

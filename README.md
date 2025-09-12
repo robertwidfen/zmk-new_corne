@@ -21,6 +21,14 @@ I added DE keycodes from https://github.com/joelspadin/zmk-locale-generator/rele
 To flash the new firmware switch off both halfs, connect the left half by USB and press the reset button on the bottom twice with a paperclip. A new drive named `NICENANO` will show up. Copy `left_eyelash_corne.uf2` to it. Windows sometimes complains that the copy failed as the half will disconnect directly after the copy operation - do not worry just go on. Disconnect left half and connect right half and press the reset button on the bottom twice and copy `right_eyelash_corne.uf2` to the drive `NICENANO`. Now disconnect the right half, switch on the left half first, then the right half second.
 If you have flashed the wrong file to a half, or in certain other situations, you may need to flash `reset_settings_eyelash_corne.uf2` to each half first, before flashing the half-specific firmware file.
 
+## Config
+
+The config contains some additional behaviors:
+* &caps_word_de to handle also äüö
+* &reliable_altgr to add some delay to AltGr bindings to work in RDP - without this RDP eventually swallows AltGr modifier and send only key
+* 😀 in symbol layer is bound to Gui-Space which opens https://github.com/gilleswaeber/emoji-keyboard
+
+
 ## Keymap Diagram
 
 The layout is based on [Bone](https://neo-layout.org/Layouts/bone/) for DE-DE.

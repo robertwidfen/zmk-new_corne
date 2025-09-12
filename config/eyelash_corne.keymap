@@ -34,8 +34,6 @@
     trigger-period-ms = <16>;
 };
 
-&caps_word { continue-list = <LEFT_SHIFT RIGHT_SHIFT DE_UNDERSCORE DE_MINUS DE_A_UMLAUT DE_U_UMLAUT DE_O_UMLAUT>; };
-
 / {
     macros {
         reliable_altgr: reliable_altgr {
