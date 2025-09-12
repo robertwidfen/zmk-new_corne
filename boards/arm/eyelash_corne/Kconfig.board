@@ -3,6 +3,8 @@
 # SPDX-License-Identifier: MIT
 #
 
+source "../../config/Kconfig"
+
 config BOARD_EYELASH_CORNE_LEFT
     bool "eyelash_corne left"
     depends on SOC_NRF52840_QIAA
