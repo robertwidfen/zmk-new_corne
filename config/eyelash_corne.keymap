@@ -85,6 +85,7 @@
 
         caps_word_de: caps_word_de {
              compatible = "zmk,behavior-caps-word-de";
+             #binding-cells = <0>;
         };
     };
 
