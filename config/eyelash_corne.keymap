@@ -86,7 +86,7 @@
         caps_word_de: caps_word_de {
              compatible = "zmk,behavior-caps-word-de";
              #binding-cells = <0>;
-             continue-list = <DE_UNDERSCORE DE_MINUS DE_A_UMLAUT DE_U_UMLAUT DE_O_UMLAUT>;
+             continue-list = <DE_UNDERSCORE DE_MINUS>;
         };
     };
 
