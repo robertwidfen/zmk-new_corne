@@ -24,8 +24,8 @@ If you have flashed the wrong file to a half, or in certain other situations, yo
 ## Config
 
 The config contains some additional behaviors:
-* caps_word_de to handle also äüö
-* reliable_altgr to add some delay to AltGr bindings to work in RDP - without this RDP eventually swallows AltGr modifier and send only key
+* &caps_word_de to handle also äüö
+* &reliable_altgr to add some delay to AltGr bindings to work in RDP - without this RDP eventually swallows AltGr modifier and send only key
 * 😀 in symbol layer is bound to Gui-Space which opens https://github.com/gilleswaeber/emoji-keyboard
 
 
