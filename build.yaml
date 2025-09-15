@@ -2,10 +2,11 @@
 include:
   - board: eyelash_corne_left
     shield: nice_view
-    snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
     artifact-name: left_eyelash_corne
-    snippet: zmk-usb-logging   # Uncomment to log over USB.
+    snippet:
+      - studio-rpc-usb-uart
+      - zmk-usb-logging   # Uncomment to log over USB.
   - board: eyelash_corne_right
     shield: nice_view
     artifact-name: right_eyelash_corne
