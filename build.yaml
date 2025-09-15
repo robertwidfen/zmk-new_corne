@@ -15,4 +15,3 @@ include:
     shield: settings_reset
     artifact-name: settings_reset_eyelash_corne
     #snippet: zmk-usb-logging   # Uncomment to log over USB.
-
