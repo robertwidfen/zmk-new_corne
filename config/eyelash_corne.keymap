@@ -86,7 +86,6 @@
              compatible = "zmk,behavior-caps-word-de";
              #binding-cells = <0>;
              continue-list = <DE_UNDERSCORE DE_MINUS>;
-             mods = <(MOD_LSFT)>;
         };
     };
 
