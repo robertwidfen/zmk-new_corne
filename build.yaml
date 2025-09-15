@@ -5,8 +5,8 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
     artifact-name: left_eyelash_corne
     # only one of these can be enabled
-    # snippet: studio-rpc-usb-uart # Uncomment to enable ZMK Studio
-    snippet: zmk-usb-logging   # Uncomment to log over USB.
+    snippet: studio-rpc-usb-uart # Uncomment to enable ZMK Studio
+    # snippet: zmk-usb-logging   # Uncomment to log over USB.
   - board: eyelash_corne_right
     shield: nice_view
     artifact-name: right_eyelash_corne
