@@ -184,8 +184,8 @@ layers:
   - Ctl+Y
   - {type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - '&key_repeat'
-  - $$mdi:alpha-w-box$$
+  - Repeat
+  - Caps Word DE
   - $$mdi:apple-keyboard-caps$$
   - Ins
   - Scroll Lock
