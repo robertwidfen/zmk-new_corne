@@ -44,10 +44,10 @@ layers:
   - {t: '-', s: _}
   - ''''
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:backspace$$', h: Command}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Command}
   - {t: '$$mdi:keyboard-return$$', h: Numbers}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
-  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
+  - {t: '$$mdi:backspace$$', h: Command}
   - System
   Numbers:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -161,7 +161,7 @@ layers:
   - PG UP
   - PG DN
   - Ctl+END
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+$$mdi:keyboard-tab$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - {type: held}
@@ -194,7 +194,7 @@ layers:
   - {type: held alternate}
   - {type: held alternate}
   - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   System:
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
