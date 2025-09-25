@@ -72,7 +72,6 @@
         QEMark: QEMark {
             compatible = "zmk,behavior-mod-morph";
             bindings = <&kp DE_QUESTION>, <&kp DE_EXCLAMATION>;
-
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
         };
@@ -115,6 +114,14 @@
             hold-trigger-key-positions = <KEYS_R THUMBS>; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
+
+        BsDel: BsDel {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+
     };
 
     rgb_encoder: rgb_encoder {
@@ -140,7 +147,7 @@
 &kp ESC  &kp J           &kp D               &kp U         &kp A             &kp X                                &kp C_VOLUME_UP              &kp P            &kp H              &kp L     &kp M                &kp W            &kp PRINTSCREEN
 &kp TAB  &hml LEFT_ALT C  &hml LEFT_CONTROL T  &lt 3 I       &hml LEFT_SHIFT E  &hml LEFT_GUI O           &kp C_PREV  &kp C_MUTE       &kp C_NEXT  &hmr RIGHT_GUI B  &hmr RIGHT_SHIFT N  &lt 3 R   &hmr RIGHT_CONTROL S  &hmr RIGHT_ALT G  &kp DE_DOUBLE_QUOTES
 &to 0    &QEMark         &kp DE_COMMA        &kp V         &kp F             &kp Q           &none                &kp C_VOL_DN                 &kp DE_Y         &kp K              &kp DE_Z  &kp DE_DOT           &kp DE_MINUS     &kp DE_SINGLE_QUOTE
-                                             &kp LEFT_ALT  &lt 3 BACKSPACE   &lt 2 ENTER                                                       &lt 2 SPACE      &lt 1 DELETE       &mo 4
+                                             &kp LEFT_ALT  &lt 3 BACKSPACE   &lt 1 ENTER                                                       &lt 2 SPACE      &BsDel             &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
