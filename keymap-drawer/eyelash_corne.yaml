@@ -100,23 +100,23 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   Symbols:
   - {t: '$$mdi:transfer$$', type: trans}
-  - <
-  - '`'
+  - ^
+  - '&'
   - Ü
   - Ä
   - °
   - $$mdi:volume-high$$
-  - 😀
+  - {type: none}
   - '{'
   - '}'
-  - '&'
-  - \
+  - '`'
+  - {type: none}
   - {type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '=', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '''', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '~', h: Command}
-  - {t: €, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: <, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '>', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: /, h: Command}
+  - {t: '=', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: Ö, h: '$$mdi:apple-keyboard-command$$'}
   - REWIND
   - PLAY PAUSE
@@ -125,21 +125,21 @@ layers:
   - {t: (, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: ), h: Command}
   - {t: ß, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '|', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '=', h: '$$mdi:apple-keyboard-option$$'}
   - {type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '>'
-  - ´
-  - ^
+  - {type: none}
+  - '|'
+  - \
   - '~'
   - '@'
   - {type: none}
   - $$mdi:volume-low$$
-  - {type: none}
+  - 😀
   - '['
   - ']'
-  - '='
-  - /
+  - ´
+  - {type: none}
   - {type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

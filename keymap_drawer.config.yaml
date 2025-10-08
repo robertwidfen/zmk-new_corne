@@ -265,14 +265,15 @@ parse_config:
     "&key_repeat": "Repeat"
 
     # AltGr keys
-    "&reliable_altgr DE_LEFT_BRACE": "{"
-    "&reliable_altgr DE_RIGHT_BRACE": "}"
-    "&reliable_altgr DE_LEFT_BRACKET": "["
-    "&reliable_altgr DE_RIGHT_BRACKET": "]"
-    "&reliable_altgr DE_TILDE": "~"
-    "&reliable_altgr DE_AT": "@"
-    "&reliable_altgr DE_PIPE": "|"
-    "&reliable_altgr DE_EURO": "€"
+    "&altgr DE_LEFT_BRACE": "{"
+    "&altgr DE_RIGHT_BRACE": "}"
+    "&altgr DE_LEFT_BRACKET": "["
+    "&altgr DE_RIGHT_BRACKET": "]"
+    "&altgr DE_BACKSLASH": "\\"
+    "&altgr DE_TILDE": "~"
+    "&altgr DE_AT": "@"
+    "&altgr DE_PIPE": "|"
+    "&altgr DE_EURO": "€"
 
   toggle_label: "activate"
 
@@ -300,6 +301,7 @@ parse_config:
     DE_APOSTROPHE: "'"
     DE_ACUTE: "´"
     DE_AMPERSAND: "&"
+    DE_AMPS: "&"
     DE_PIPE: "|"
     DE_TILDE: "~"
     DE_BACKSLASH: "\\"
@@ -313,8 +315,10 @@ parse_config:
     DE_RIGHT_PARENTHESIS: ")"
     DE_LEFT_BRACKET: "["
     DE_RIGHT_BRACKET: "]"
+    DE_LESS_THAN: "<"
     DE_LT: "<"
     DE_EQUAL: "="
+    DE_GREATER_THAN: ">"
     DE_GT: ">"
     DE_PLUS:
       tap: "+"

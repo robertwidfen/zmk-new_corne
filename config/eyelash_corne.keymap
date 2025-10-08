@@ -23,6 +23,7 @@
 #include "zmk-helpers/key-labels/eyelash42.h"
 
 // for timeless home row mods https://zmk.dev/docs/keymaps/behaviors/hold-tap?examples=home_row_mods
+
 #define KEYS_L  LT5  LT4  LT3  LT2  LT1  LT0 LM5  LM4  LM3  LM2  LM1  LM0 LB5  LB4  LB3  LB2  LB1  LB0
 #define KEYS_R  RT0  RT1  RT2  RT3  RT4  RT5 RM0  RM1  RM2  RM3  RM4  RM5 RB0  RB1  RB2  RB3  RB4  RB5
 #define THUMBS  LH2  LH1  LH0  RH0  RH1  RH2
@@ -45,9 +46,9 @@
 
 / {
     macros {
-        reliable_altgr: reliable_altgr {
+        altgr: altgr {
             compatible = "zmk,behavior-macro-one-param";
-            label = "RELIABLE_ALTGR";
+            label = "altgr";
             #binding-cells = <1>;
             bindings =
                 <&macro_press>,
@@ -78,15 +79,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT)>;
-        };
-
-        ralt_altgr: ralt_altgr {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            bindings = <&kp>, <&reliable_altgr>;
         };
 
         caps_word_de: caps_word_de {
@@ -123,7 +115,7 @@
             hold-trigger-on-release;
         };
 
-        BsDel: BsDel {
+        bsdel: Backspace_DeleteOnShift {
             compatible = "zmk,behavior-mod-morph";
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
 
@@ -166,7 +158,7 @@
             bindings = <
 &trans  &kp F1            &kp F2                &kp F3        &kp F4              &kp F5                            &none         &kp F6             &kp F7               &kp F8        &kp F9                 &kp F10            &kp F11
 &trans  &hml LEFT_ALT N1  &hml LEFT_CONTROL N2  &lt 3 N3      &hml LEFT_SHIFT N4  &hml LEFT_GUI N5           &none  &none  &none  &hmr RIGHT_GUI N6  &hmr RIGHT_SHIFT N7  &lt 3 N8      &hmr RIGHT_CONTROL N9  &hmr RIGHT_ALT N0  &kp F12
-&trans  &kp DE_EURO       &kp DE_COMMA          &kp DE_SLASH  &kp DE_ASTRK        &kp DE_EQUAL      &none           &none         &kp DE_PERCENT     &kp DE_PLUS          &kp DE_MINUS  &kp DE_DOT             &kp DE_DOLLAR      &kp DE_SECTION
+&trans  &altgr DE_EURO    &kp DE_COMMA          &kp DE_SLASH  &kp DE_ASTRK        &kp DE_EQUAL      &none           &none         &kp DE_PERCENT     &kp DE_PLUS          &kp DE_MINUS  &kp DE_DOT             &kp DE_DOLLAR      &kp DE_SECTION
                                                 &trans        &trans              &trans                                          &trans             &trans               &trans
             >;
 
@@ -176,10 +168,10 @@
         Symbols {
             display-name = "Symbols";
             bindings = <
-&trans  &kp DE_LT               &kp DE_GRAVE                     &kp DE_U_UMLAUT  &kp DE_A_UMLAUT           &kp DE_DEG                                        &kp C_VOLUME_UP                        &kp LG(SPACE)           &reliable_altgr DE_LEFT_BRACE         &reliable_altgr DE_RIGHT_BRACE    &kp DE_AMPERSAND          &kp DE_BACKSLASH        &none
-&trans  &hml LEFT_ALT DE_EQUAL  &hml LEFT_CONTROL DE_APOSTROPHE  &lt 3 DE_TILDE   &hml LEFT_SHIFT DE_EURO   &hml LEFT_GUI DE_O_UMLAUT           &kp C_REWIND  &kp C_PLAY_PAUSE   &kp C_FAST_FORWARD  &hmr RIGHT_GUI DE_HASH  &hmr RIGHT_SHIFT DE_LEFT_PARENTHESIS  &lt 3 DE_RIGHT_PARENTHESIS        &hmr RIGHT_CONTROL DE_SZ  &hmr RIGHT_ALT DE_PIPE  &none
-&trans  &kp DE_GT               &kp DE_ACUTE                     &kp DE_CARET     &reliable_altgr DE_TILDE  &reliable_altgr DE_AT      &none                  &kp C_VOLUME_DOWN                      &none                   &reliable_altgr DE_LEFT_BRACKET       &reliable_altgr DE_RIGHT_BRACKET  &kp DE_EQUAL              &kp DE_SLASH            &none
-                                                                 &trans           &trans                    &trans                                                                                   &trans                  &trans                                &trans
+&trans  &kp DE_CARET                &kp DE_AMPS                        &kp DE_U_UMLAUT      &kp DE_A_UMLAUT           &kp DE_DEG                                        &kp C_VOLUME_UP                        &none                   &altgr DE_LEFT_BRACE                  &altgr DE_RIGHT_BRACE       &kp DE_GRAVE              &none                    &none
+&trans  &hml LEFT_ALT DE_LESS_THAN  &hml LEFT_CONTROL DE_GREATER_THAN  &lt 3 DE_SLASH       &hml LEFT_SHIFT DE_EQUAL  &hml LEFT_GUI DE_O_UMLAUT           &kp C_REWIND  &kp C_PLAY_PAUSE   &kp C_FAST_FORWARD  &hmr RIGHT_GUI DE_HASH  &hmr RIGHT_SHIFT DE_LEFT_PARENTHESIS  &lt 3 DE_RIGHT_PARENTHESIS  &hmr RIGHT_CONTROL DE_SZ  &hmr RIGHT_ALT DE_EQUAL  &none
+&trans  &none                       &altgr DE_PIPE                     &altgr DE_BACKSLASH  &altgr DE_TILDE           &altgr DE_AT               &none                  &kp C_VOLUME_DOWN                      &kp LG(SPACE)           &altgr DE_LEFT_BRACKET                &altgr DE_RIGHT_BRACKET     &kp DE_ACUTE              &none                    &none
+                                                                       &trans               &trans                    &trans                                                                                   &trans                  &trans                                &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
