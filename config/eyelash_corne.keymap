@@ -91,7 +91,7 @@
         caps_word_de: caps_word_de {
             compatible = "zmk,behavior-caps-word-de";
             #binding-cells = <0>;
-            continue-list = <DE_UNDERSCORE DE_MINUS>;
+            continue-list = <BACKSPACE DELETE LEFT RIGHT DE_UNDERSCORE DE_MINUS>;
         };
 
         // https://github.com/urob/zmk-config?tab=readme-ov-file
