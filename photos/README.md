@@ -11,3 +11,11 @@
 # Final result
 
 ![Photo of my Eyelash Corne](eyelash-corne-de-bone.png)
+
+# Broken glass display cover
+
+![Broken display Cover](eyelash-corne-broken-display-cover.png)
+
+# Self made acrylic display Cover
+
+![Self made acrylic display Cover](eyelash-corne-de-bone-acrylic-cover.png)
