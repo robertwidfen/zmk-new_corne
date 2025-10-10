@@ -109,14 +109,14 @@ layers:
   - 😀
   - '{'
   - '}'
-  - '`'
+  - '&reliable_altgr DE_GRAVE'
   - {type: none}
   - {type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: DE LESS THAN, h: '$$mdi:apple-keyboard-option$$'}
   - {t: DE GREATER THAN, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: \, h: Command}
-  - {t: /, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: /, h: Command, s: '?'}
+  - {t: '=', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: Ö, h: '$$mdi:apple-keyboard-command$$'}
   - REWIND
   - PLAY PAUSE
@@ -129,8 +129,8 @@ layers:
   - {type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: none}
-  - ´
   - '|'
+  - '&reliable_altgr DE_BACKSLASH'
   - '~'
   - '@'
   - {type: none}
