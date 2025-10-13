@@ -258,6 +258,7 @@ parse_config:
 
     # Others
     "&studio_unlock": "Studio Unlock"
+    "&soft_off": "Soft Off"
     "&bl BL_TOG": "BL TOGGLE"
     "&bl BL_CYCLE": "BL CYCLE"
     "&caps_word": $$mdi:alpha-w-box$$

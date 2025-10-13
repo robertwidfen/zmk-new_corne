@@ -212,7 +212,7 @@ layers:
   - {t: BONEish, h: activate}
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - '&soft_off'
+  - Soft Off
   - EP TOG
   - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - RGB ON
